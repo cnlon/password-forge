@@ -1,0 +1,37 @@
+{
+  "name": "password-forge",
+  "version": "0.1.0",
+  "description": "Forge password input to prevent browser from saving or autofilling password",
+  "main": "password-forge.css",
+  "bin": {
+    "forge": "bin/main.js"
+  },
+  "scripts": {
+    "clean": "rm *.woff",
+    "prebuild": "npm run clean",
+    "build": "ls shapes/ | xargs -I {} node bin/main.js -i shapes/{}"
+  },
+  "keywords": [
+    "text-security",
+    "-webkit-text-security"
+  ],
+  "homepage": "https://github.com/cnlon/password-forge#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnlon/password-forge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cnlon/password-forge/issues"
+  },
+  "author": "lon (https://lon.im)",
+  "license": "MIT",
+  "devDependencies": {
+    "commander": "^2.11.0",
+    "svg2ttf": "^4.1.0",
+    "svgicons2svgfont": "^7.0.2",
+    "ttf2woff": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}

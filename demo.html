@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>DEMO</title>
+<link href="./password-forge.css" rel="stylesheet">
+<style>
+  input {
+    width: 100px;
+    font-size: 16px;
+  }
+</style>
+<script src="./detect.js"></script>
+<body>
+  <table>
+    <tr>
+      <td>
+        使用 password-forge
+      </td>
+      <td>
+        <input type="text" class="password-forge-disc" value="123456">
+      </td>
+      <td>
+        <input type="text" class="password-forge-circle" value="123456">
+      </td>
+      <td>
+        <input type="text" class="password-forge-square" value="123456">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        直接使用 password-forge 字体
+      </td>
+      <td>
+        <input type="text" style="font-family: text-security-disc" value="123456">
+      </td>
+      <td>
+        <input type="text" style="font-family: text-security-circle" value="123456">
+      </td>
+      <td>
+        <input type="text" style="font-family: text-security-square" value="123456">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        使用原生 -webkit-text-security
+      </td>
+      <td>
+        <input type="text" style="-webkit-text-security: disc" value="123456">
+      </td>
+      <td>
+        <input type="text" style="-webkit-text-security: circle" value="123456">
+      </td>
+      <td>
+        <input type="text" style="-webkit-text-security: square" value="123456">
+      </td>
+    </tr>
+</body>
+</html>
