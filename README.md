@@ -24,7 +24,7 @@ npm install password-forge
 </html>
 ```
 
-详细使用可以参考 [DEMO](https://github.com/cnlon/password-forge/tree/master/demo.html)
+在线示例 [CodePen](https://codepen.io/lon/pen/bYLGNG?editors=1000) 或 [JSFiddle](https://jsfiddle.net/lon/9huqy6b1/)
 
 ---
 
